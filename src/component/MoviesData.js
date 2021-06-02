@@ -4,7 +4,7 @@ const movies = [
         id:uuidv4(),
         title:'John week',
         img:'https://images-na.ssl-images-amazon.com/images/I/51-v2kovwfL._SY445_.jpg',
-        rate:4,
+        rate:2,
         desc:'Action'
     },
     {

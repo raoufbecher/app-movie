@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AddMovie({getInputData}) {
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
@@ -46,12 +45,12 @@ export default function AddMovie({getInputData}) {
      id:uuidv4(),
      title:'',
       img:'',
+      rate:'', 
       desc:'',
   });
  const [rate, setRate] = useState(0);
 const handleInput = (e) => {
     setInput({...input, [e.target.name]: e.target.value});
-
 };
 const handleAdd = (e) => {
     e.preventDefault();
