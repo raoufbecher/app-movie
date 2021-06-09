@@ -5,8 +5,8 @@ import AddMovie from './component/AddMovie'
 import React, {useState} from 'react';
 import Filtre from './component/Filtre'
 import './App.css';
-function App() {
-  const [movieList, setMovieList]=useState(movies);
+function App({movieList,setMovieList}) {
+  
   const [searchInput, setSearchInput] = useState({searchInput:'',searchRate:0})
   const getInputData = (data) => {
 setMovieList ([...movieList,data] ); 
